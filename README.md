@@ -1,4 +1,4 @@
-# google-code-challenge
+# The Bright Network - Google Code Challenge
 I have implemented the Java solution for the Google Code Challenge: YouTube Command Line. 
 
 
