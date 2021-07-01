@@ -17,6 +17,7 @@ class VideoLibrary {
   private final HashMap<String, Video> videos;
 
   VideoLibrary() {
+
     this.videos = new HashMap<>();
     try {
       File file = new File(this.getClass().getResource("/videos.txt").getFile());
@@ -35,6 +36,7 @@ class VideoLibrary {
           tags = new ArrayList<>();
         }
         this.videos.put(id, new Video(title, id, tags));
+
       }
     } catch (FileNotFoundException e) {
       System.out.println("Couldn't find videos.txt");
@@ -52,4 +54,7 @@ class VideoLibrary {
   Video getVideo(String videoId) {
     return this.videos.get(videoId);
   }
+
 }
+
+
